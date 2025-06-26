@@ -1,0 +1,167 @@
+body{
+  background-color: rgb(15, 11, 11);
+}
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+
+  font-size: 4rem;
+  color: white;
+
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+}
+.add-button:hover{
+  background-color: hsl(76, 82%, 59%);
+}
+.delete-button{
+  background-color: hsl(300, 53%, 48%);
+}
+.delete-button:hover{
+  background-color: hsl(320, 82%, 58%);
+}
+.move-button{
+  background-color: hsl(246, 47%, 54%);
+}
+.move-button:hover{
+  background-color: hsl(258, 80%, 63%);
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 700px;
+  margin: 20px auto; /* Center on screen */
+  padding: 0 15px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+.task-container {
+  max-width: 900px;
+  margin: 0 auto; /* centers the whole task list */
+  padding: 0 20px;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgba(252, 241, 241, 0.918);
+  margin-bottom: 10px;
+  border: 3px solid rgb(197, 190, 190);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;         /* takes full container width */
+  max-width: 600px;    /* limits size on large screens */
+  margin: 10px auto;   /* center horizontally */
+  box-sizing: border-box;
+}
+
+.text{
+  flex-grow: 1;
+
+}
+.delete-button, .move-button{
+  padding: 8px 12px ;
+  font-size: 1.4rem;
+  margin-left: 10px;
+
+}
+
+/* Mobile: Small screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .to-do-list {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 8px 14px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .delete-button,
+  .move-button {
+    margin: 8px 0 0;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/* Tablet: Medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 10px 18px;
+  }
+
+  li {
+    font-size: 1.6rem;
+    padding: 12px;
+  }
+}
+
+
